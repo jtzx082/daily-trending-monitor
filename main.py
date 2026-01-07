@@ -5,9 +5,9 @@ import urllib.parse
 
 # 定义您想要关注的关键词（可以在这里随意增减）
 KEYWORDS = [
-    "高中化学教学",
-    "高中班主任工作",
-    "人工智能 AI 技术"
+    "高中化学",
+    "班主任工作",
+    "Gemini"
 ]
 
 def fetch_bing_news_rss(keyword):
