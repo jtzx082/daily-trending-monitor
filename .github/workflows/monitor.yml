@@ -1,44 +1,59 @@
 name: Open Source Monitor
 
+# 触发条件
 on:
   push:
-    branches: [ main ]
+    branches: [ main ]      # 推送代码到 main 分支时触发
   schedule:
-    - cron: '0 0 * * *' # 每天 UTC 0点 (北京时间早8点) 运行
-  workflow_dispatch: # 允许手动点击按钮运行
+    - cron: '0 0 * * *'     # 定时任务：每天 UTC 0点 (北京时间早上8点)
+  workflow_dispatch:        # 允许在 Actions 页面手动点击按钮触发
 
+# 赋予写权限，以便将生成的 README 推送回仓库
 permissions:
-  contents: write # 赋予写权限，以便将结果推送到仓库
+  contents: write
 
 jobs:
   scrape-and-report:
     runs-on: ubuntu-latest
     
     steps:
+    # 1. 拉取代码
     - name: Checkout code
       uses: actions/checkout@v3
 
+    # 2. 设置 Python 环境
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
 
+    # 3. 安装依赖
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt
+        python -m pip install --upgrade pip
+        # 如果你上传了 requirements.txt 则使用它，否则直接安装常用库防止报错
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        else
+          pip install requests beautifulsoup4
+        fi
 
+    # 4. 运行爬虫脚本
     - name: Run Scraper
       run: python main.py
 
+    # 5. 提交并推送更改 (已修复 print -> echo 错误)
     - name: Commit and Push changes
       run: |
         git config --global user.name "GitHub Action Bot"
         git config --global user.email "action@github.com"
-        # 检查是否有文件变动
+        
+        # 检查是否有文件变动 (git status -s 会输出变动的文件列表，如果不为空则说明有变动)
         if [[ -n $(git status -s) ]]; then
           git add README.md
           git commit -m "Update Daily Trending: $(date +'%Y-%m-%d')"
           git push
+          echo "Changes pushed successfully."
         else
-          print("No changes to commit")
+          echo "No changes to commit. Skipping push."
         fi
