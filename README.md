@@ -1,51 +1,54 @@
 # 🌍 全网教育与AI资讯日报
 
-**更新时间**: 2026-01-07 09:18:05 (UTC)
+**更新时间**: 2026-01-07 09:23:44 (UTC)
 
-## 📌 高中化学教学
+## 📌 高中化学
 
 | 来源 | 标题 | 时间 |
 |---|---|---|
 | 🔵 G | [永州市2025年高中化学青年教师教学竞赛在永州四中举办 - 湖南红网](https://news.google.com/rss/articles/CBMiYkFVX3lxTE1OdHY1RTVMbzZ5aG4zZ0pEb2ZjMWMxZzlJS252YnFxZDg2SWVpV3RLbmJsWGp3d2J3d09sWHBfN1dNb2VRbnJuS25maXNuRUc0Mmxjd0tTMnN6MEJtZTUyS3NR?oc=5) | Mon, 22 Dec 2025 |
 | 🔵 G | [化学资深专家赵晶老师 - 中华网](https://news.google.com/rss/articles/CBMiZkFVX3lxTFBsUnhDdmVXYUhCRGNSclZLN2FjZUIzOUhORzNnakFUdkhhVHBwN2NEUks0a01qRDlKS2NLVkNQZW94M3RYbnF2dEJmdjdVd00wNkktbWNHVTRhb2lxOFFjU2tZc3JzUQ?oc=5) | Wed, 31 Dec 2025 |
-| 🔵 G | [玩转化学奇趣，深圳福田这所学校举办化学卓越课程启幕活动 - 奥一网](https://news.google.com/rss/articles/CBMiZkFVX3lxTE0yb2dFbXB5bF9xNXByLU1uNFFQdlFyNmw0empCRE90cW1Ma0NtZ3FSVHZyWlFFcnhMN3VSQjlZM0JLYzNYM1g2eTM2X2VrS05ia21zNE5pSUZtSkhwMHFFdV9MUDlBZw?oc=5) | Tue, 16 Dec 2025 |
-| 🔵 G | [聚焦教育科研，看这场研修活动中的多维教学探索 - 华声在线](https://news.google.com/rss/articles/CBMiX0FVX3lxTE91Ti01N1RPTDhJcHBwRUxYZXEzdDJ5c0p5WW9QOVF6ZEl6dk5oN0dJVms3OFlMZXdMczd1WlJnUjF6MGJHSEFvOHY0VFBJS1ZCV1gzamJUSWR4bUZKLWpF?oc=5) | Mon, 15 Dec 2025 |
 | 🔵 G | [喜讯！仙桃中学这位青年教师即将亮相“湖北好课堂” - 湖北日报传媒集团](https://news.google.com/rss/articles/CBMiWEFVX3lxTFBaTmtWd0YwemFjbnZMNlNZWXB4YnU2YlV4QnVqT1VuYWdUSGs0M3F3QWpUN2pISFVsUjd5TkdBUDZZRjR0cGFYaTlSSXZLeVVaQ0dnQ0dEdFI?oc=5) | Wed, 05 Nov 2025 |
-| 🔴 D | [大概念统领的高中化学单元整体教学策略](https://paper.dzwww.com/dzrb/content/20240314/Articel11005MT.htm) | 2024年3月14日 |
-| 🔴 D | [高中化学课堂如何做到守正创新](http://www.jyb.cn/rmtzgjyb/202306/t20230630_2111062695.html) | 2023年6月30日 |
-| 🔴 D | [甘孜州举办高中化学优质课展评暨任晓红名师工作室第三次研讨活动](http://www.tibet.cn/cn/news/zcdt/202310/t20231016_7502521.html) | 2023年10月16日 |
-| 🔴 D | [株洲市高中化学新教材片段教学比赛在九方中学举行](https://baijiahao.baidu.com/s?id=1748277807128139934&wfr=spider&for=pc) | 2022年11月1日 |
+| 🔵 G | [诺贝尔化学奖得主自爆：高中时讨厌化学，大学仍讨厌化学 - jfdaily.com](https://news.google.com/rss/articles/CBMiV0FVX3lxTE1qcVBTdEpWbUtGT2RLOS02WEJHOHdsdmg3QlRFV2poZG4yWEJDbjloaUR0UU1nVE1neFdRcEc3cUtkNE01Rk1lZEEyZi1wMnFXWGZiZDY1bw?oc=5) | Mon, 25 Aug 2025 |
+| 🔵 G | [祝贺！无锡4名学子！ - 紫牛新闻](https://news.google.com/rss/articles/CBMidkFVX3lxTE5GREstWWRDbk13LXZtblBrTkZNN2Z5akF3YmdrWDFtMk9PZjMxaHpEZWU5R0RwbGxJUk1xLVMyc2tmWlkwN0VSY3lpYjdMS1c1X2sxemc0aHVzelRlS1h6WHJTaExqdWZrc2xlUXRjV0dCLTJGdkE?oc=5) | Fri, 31 Oct 2025 |
+| 🔴 D | [高中化学常考知识大汇总](http://www.gaokao.com/e/20230421/64425517104d9.shtml) | 2023年4月21日 |
+| 🔴 D | [今年高考政治、历史、地理、物理、化学、生物试题有这些特点](https://www.thepaper.cn/newsDetail_forward_18480543) | 2022年6月8日 |
+| 🔴 D | [高中化学方程式记忆超强法宝](http://www.gaokao.com/e/20230531/64770b90102c1.shtml) | 2023年5月31日 |
+| 🔴 D | [基教专家解析2022年北京市高中学业水平等级性考试化学试题](https://baijiahao.baidu.com/s?id=1735208474875705526&wfr=spider&for=pc) | 2022年6月10日 |
 
-## 📌 高中班主任工作
-
-| 来源 | 标题 | 时间 |
-|---|---|---|
-| 🔵 G | [宁武县高级中学校首届班主任工作论坛圆满举行 - 风闻](https://news.google.com/rss/articles/CBMiakFVX3lxTE1Md1lBMTBTa1dtRERnN3lDbTdJaVZDU01FZ2pKaHZ6eHFKWHEwVHVwNXplNDZ2RTZJSDJLUVJvaHA2LUlLdW5kdW45S0k2LTBLTXNjckVWUU5tR1JjSTM2M3dsT3FZa2JMS3c?oc=5) | Mon, 29 Dec 2025 |
-| 🔵 G | [深圳明德实验学校（集团）举办班主任教育叙事大赛 - 奥一网](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Xc1U4d0UydjM3QldFVjhJU0tlOEZkTnRIWnBZUHlJYVR2Q3ZQRUlhUG1sQl9pWFBOUFlrQUNPSXY4ZjFlUU44czNjamdfb0YwbHlRVkswdEFJLTZTVzlxdnk2QUo4Zw?oc=5) | Sat, 13 Dec 2025 |
-| 🔵 G | [广西藤县第七中学教师陈羽：做学生的知心朋友 - jyb.cn](https://news.google.com/rss/articles/CBMidEFVX3lxTE1aTjdjNVUyU1g0RWFSRVctLVpjX1NzWmZ5RXhmQ3dsT1psZnFXaXZicDdrQ1VWUjYzQ19oUHhjUnBnbUEtNkNqeUYyLXpMcjBKb25zVjhZMlROXzhyMi1xQjZkcVRJNVMzOG9rQ2xEUlctZGgz?oc=5) | Mon, 15 Sep 2025 |
-| 🔵 G | [以爱育爱 向美而行 巴蜀中学班主任年会共研德育新路径 - 华龙网](https://news.google.com/rss/articles/CBMikgFBVV95cUxPRjNPcXpMV1BaLVVfVU96bHFDekNELVNQbDFGNWI5SGhqYkNPbHZ5Tlg3V2g0aEVSdXpoNGVoU3dZZnlJOVNMOVJRbUdsemhLTkZvcUc1V2JyN1U3VFFpX24zUnZGTDRjM1NpNXQxcVBXZEdERDlGUVNTaHpXUGZfc2xoSm9iOUhDT084SjVVSGNYUQ?oc=5) | Sun, 06 Jul 2025 |
-| 🔵 G | [全国招聘 名师荟萃 - 昆明信息港](https://news.google.com/rss/articles/CBMiakFVX3lxTE5FbmJOcHh4dVBpek8xdXppMXVqZHNyN19aOFoxbHVyY1g4ckZETGkyd05IUHlseXI1TXdIUWVTMTNGSjg0WldyX1ZUc3BQYjY0anVmaEZManJyd3BZZXlxeFlWVG9KY2V3U3c?oc=5) | Tue, 10 Jun 2025 |
-| 🔴 D | [专访东营市河口区第一中学教师苑国强:结伴行走在班主任专业化发展...](https://news.dongyingnews.cn/system/2023/11/29/010815006.shtml) | 2023年11月29日 |
-| 🔴 D | [关于做好2023年长沙市城区高中学校招生工作的通知](http://www.changsha.gov.cn/zfxxgk/zfwjk/gdwxtwj/202303/t20230329_11044153.html) | 2023年3月29日 |
-| 🔴 D | [我的高中班主任老师](https://baijiahao.baidu.com/s?id=1748252671729705549&wfr=spider&for=pc) | 2022年11月1日 |
-| 🔴 D | [烟台市双语实验高中举行班主任师徒结对仪式](https://baijiahao.baidu.com/s?id=1793227362785295525&wfr=spider&for=pc) | 2024年3月11日 |
-
-## 📌 人工智能 AI
+## 📌 班主任
 
 | 来源 | 标题 | 时间 |
 |---|---|---|
-| 🔵 G | [持续推进“人工智能+”！高增长AI概念股出炉 - 证券时报](https://news.google.com/rss/articles/CBMioAFBVV95cUxQNzdOOU1pVkx5ckJ3MGtQelFybXVaUGxLSXZaOGNYbXYxVXN2bF9PSzVsU3dhMmZONUZhOGduVWJXR0lLeE00SGpiamhOZW5ydU5ZblBmZDBmbTZNOE45YXExR2luWk14eDZIV3kxMzRPUDBMWXZKNFRmbVd5dFVDSWhVWm9STFU3c2RidlV5RUljWEpWLWNsQl9VU3NUUE9w?oc=5) | Wed, 07 Jan 2026 |
-| 🔵 G | [2025年人工智能发展回顾：开辟AI新场景 - 科学网—新闻](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuMzJHdWIxdy0wQ0dzeXhWZFpRMHNNLXdfQkpzUzRGUV92US1jUGZSUlF1dTk1ZTFjSExIcUN5WlhwTU8tb2R2am40RnQ1bkpZZlpNOE5JY3M3dFVPXzI3MElUWGY?oc=5) | Tue, 06 Jan 2026 |
-| 🔵 G | [8提人工智能，武汉市政府工作报告“含AI量”为何这么高- 湖北日报新闻客户端 - 湖北日报传媒集团](https://news.google.com/rss/articles/CBMiWEFVX3lxTE9vb216ZUdvZFM0ejEyRjlmY2RYeC16TjdiekRkNTFjeWZzLW84bzBTR2Q2bzduVm9xa0FRNzlGYmVXelZMM2Jvam9NMEx2SWlLdndKY2dRNVc?oc=5) | Wed, 07 Jan 2026 |
-| 🔵 G | [史上最大规模Tech World！联想进入混合式AI普惠新纪元-联想官网 - 联想商城](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBPZllIdzhWMTAtZ3BqM1RwNjFCc2g3aVVTaXhNSHdNT2t4LXpYNHdpMFo2bTlVaFgtbk50OUdseGxvTV9pemRoZFpTSUFzQnZWSlJyTkRnWmxBLU9o?oc=5) | Wed, 07 Jan 2026 |
-| 🔵 G | [【环球财经】CES凸显端侧与物理AI成为人工智能重要突破方向——访美国高通公司中国区董事长孟樸 - 新浪网](https://news.google.com/rss/articles/CBMigAFBVV95cUxNRkZSQjdkcXMwcGxJWFdNa0xrTDNiWWhKMnhtXzIyWVFRbG5jLWgtTFdjYW1IRzZiVnNheVU0d3pSc2hKSFV6UzhFNVUzZnA4MkJsaFNsQzgxWE56QXpoXzU0UnlWYl9fejBmc1RhUmdWY3hpWU15M2NHaXhuWEEybg?oc=5) | Wed, 07 Jan 2026 |
-| 🟢 B | [美国医院成为检验AI能力的试炼场](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e24c7db3249d681c4f4cd4425dd39&url=https%3a%2f%2fwww.msn.com%2fzh-hk%2fnews%2fother%2f%25E7%25BE%258E%25E5%259B%25BD%25E5%258C%25BB%25E9%2599%25A2%25E6%2588%2590%25E4%25B8%25BA%25E6%25A3%2580%25E9%25AA%258Cai%25E8%2583%25BD%25E5%258A%259B%25E7%259A%2584%25E8%25AF%2595%25E7%2582%25BC%25E5%259C%25BA%2far-AA1TDXcV&c=6485473986198912124&mkt=en-us) | Mon, 05 Jan 2026 |
-| 🟢 B | [扎克伯格下狠手：Meta 收购开发 AI 智能体 Manus 的蝴蝶效应公司](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e24c7db3249d681c4f4cd4425dd39&url=https%3a%2f%2fwww.msn.cn%2fzh-cn%2fnews%2fother%2f%25E6%2589%258E%25E5%2585%258B%25E4%25BC%25AF%25E6%25A0%25BC%25E4%25B8%258B%25E7%258B%25A0%25E6%2589%258B-meta-%25E6%2594%25B6%25E8%25B4%25AD%25E5%25BC%2580%25E5%258F%2591-ai-%25E6%2599%25BA%25E8%2583%25BD%25E4%25BD%2593-manus-%25E7%259A%2584%25E8%259D%25B4%25E8%259D%25B6%25E6%2595%2588%25E5%25BA%2594%25E5%2585%25AC%25E5%258F%25B8%2far-AA1Tf00v&c=12588882945447642588&mkt=en-us) | Mon, 29 Dec 2025 |
-| 🟢 B | [中国是如何斥巨资打造人工智能超级大国的](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e24c7db3249d681c4f4cd4425dd39&url=https%3a%2f%2fcn.nytimes.com%2ftechnology%2f20250717%2fchina-ai%2f&c=2102811994274985177&mkt=en-us) | Wed, 16 Jul 2025 |
-| 🟢 B | [AI投资热潮料持续 罗兵咸永道：中美技术互补 利好芯片增长市场](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e24c7db3249d681c4f4cd4425dd39&url=https%3a%2f%2fwww.stheadline.com%2fzh-hans%2floadnext%2f0%2f3529077&c=17673303212951680359&mkt=en-us) | Sun, 21 Dec 2025 |
-| 🟢 B | [AI人工智能ETF(512930)涨超1.5%，中国大模型厂商智谱与MiniMax已启动招股](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e24c7db3249d681c4f4cd4425dd39&url=https%3a%2f%2fwww.msn.com%2fzh-cn%2f%25E6%258A%2580%25E6%259C%25AF%2f%25E4%25BA%25BA%25E5%25B7%25A5%25E6%2599%25BA%25E8%2583%25BD%2fai%25E4%25BA%25BA%25E5%25B7%25A5%25E6%2599%25BA%25E8%2583%25BDetf-512930-%25E6%25B6%25A8%25E8%25B6%25851-5-%25E4%25B8%25AD%25E5%259B%25BD%25E5%25A4%25A7%25E6%25A8%25A1%25E5%259E%258B%25E5%258E%2582%25E5%2595%2586%25E6%2599%25BA%25E8%25B0%25B1%25E4%25B8%258Eminimax%25E5%25B7%25B2%25E5%2590%25AF%25E5%258A%25A8%25E6%258B%259B%25E8%2582%25A1%2far-AA1Tzbzd&c=6660627341673774199&mkt=en-us) | Sun, 04 Jan 2026 |
-| 🔴 D | [“人工智能+”加出包罗万象发展生态 “AI+智能制造”勾勒出你我...](https://news.cctv.com/2025/09/09/ARTItAzsFnF5DLL79Dn9HlLA250909.shtml) | 2025年9月9日 |
-| 🔴 D | [人工智能全产业链发展由“虚”向“实”](https://baijiahao.baidu.com/s?id=1798536316047867677&wfr=spider&for=pc) | 2024年5月9日 |
-| 🔴 D | [AI重新洗牌美股 “七姐妹”](https://baijiahao.baidu.com/s?id=1792187663578262940&wfr=spider&for=pc) | 2024年2月29日 |
-| 🔴 D | [AI对齐:让人工智能拥抱人类的价值观](http://baijiahao.baidu.com/s?id=1789743624430985664&wfr=spider&for=pc) | 2024年2月2日 |
+| 🔵 G | [【优秀班主任】胡深强：沃土育繁华 奏响班级育人实践建设三重奏 - 四川农业大学新闻网](https://news.google.com/rss/articles/CBMiWEFVX3lxTFB0WkM1bnFGU3hkUGJZSElXTHRnRXpuV21TRXpiNHdpRllQVFk5aW91WFpqUHFDMHVQTVpKQUZnamM4UXBBVmNyY2htbkI3cTRhSWtmWXJjOGg?oc=5) | Wed, 07 Jan 2026 |
+| 🔵 G | [西工大研究生持续支教大苗山 - 新华网](https://news.google.com/rss/articles/CBMif0FVX3lxTE5zenA1cW5OWXB5dk95QnF4bUhWbEExcWdNajA1Um12cDZJYzNscFpSelo2emdtbmFGdFM0bTNyYTZDUlZidXJGbk9uNm5Mcld0LXJFSFZBR05RQU5zb1o3djI5akdrQ2tTQU1sZHo0VEg2LUpoSDVfaXRVeEFuS1U?oc=5) | Wed, 07 Jan 2026 |
+| 🔵 G | [优秀班主任董欣：长情陪伴，与学生共同成长 - tsinghua.edu.cn](https://news.google.com/rss/articles/CBMiXEFVX3lxTFBRX1Y0UXl5ak1ZNU1HSWJUVGdoaVNyZ3UtSHhjRV9WS3I2MDJBcjdLaEhlSjMwU3BtWVBrQ3NTOWk5QXczWEN4RUp1cGh4WkU3dFZsWWpiRHFRM095?oc=5) | Thu, 25 Dec 2025 |
+| 🔵 G | [永州市第十二中学开展班主任优秀案例评选活动 - 湖南红网](https://news.google.com/rss/articles/CBMiYkFVX3lxTE1pNWt0WENxY0hzNGliNnd0TE1lQTkzX1pWSW5tcC1iYlV5TE5zNlJQTE9xQnZnc00ybklONnNUc0ItcXA1TXRpWDBfQTlrWlc4WkgwbldYNVlvZkZRSTdodGZR?oc=5) | Sat, 03 Jan 2026 |
+| 🔵 G | [安徽开放大学举办首届开放教育班主任基本功大赛 - jyb.cn](https://news.google.com/rss/articles/CBMidEFVX3lxTFA1RkRXMjZ1SUtfNkxLWGNZdWNveUdnSTM0UXo1Z3FrUjRRYnZFaUpjSS00YWgwa1pIaVJETU9DT2dTVVdRelVnUzRhWDI5cmpNSFAta3Z2V3R5WlhfQnI5WnZvTVhYdXcwcy1DVWhVUFJkVXFw?oc=5) | Wed, 31 Dec 2025 |
+| 🟢 B | [举办首届班主任节](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e26101b89478da0a253dabf4b8dd2&url=https%3a%2f%2fwww.msn.cn%2fzh-cn%2fnews%2fother%2f%25E4%25B8%25BE%25E5%258A%259E%25E9%25A6%2596%25E5%25B1%258A%25E7%258F%25AD%25E4%25B8%25BB%25E4%25BB%25BB%25E8%258A%2582%2far-AA1TyqkZ&c=2591476551426220123&mkt=en-us) | Sun, 04 Jan 2026 |
+| 🟢 B | [芳华绽放！李沧区班主任节亮点纷呈，解锁德育新图景](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e26101b89478da0a253dabf4b8dd2&url=https%3a%2f%2fwww.sohu.com%2fa%2f973185749_121119276&c=18070637228680521233&mkt=en-us) | Tue, 06 Jan 2026 |
+| 🟢 B | [【和实·班主任】暖心收尾，蓄力前行！-老校区班主任沙龙共探期末 ...](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e26101b89478da0a253dabf4b8dd2&url=https%3a%2f%2fwww.sohu.com%2fa%2f973480073_121123797&c=12739557522294563901&mkt=en-us) | Tue, 06 Jan 2026 |
+| 🟢 B | [班主任和副班主任的职责如何划分？｜每周一问](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e26101b89478da0a253dabf4b8dd2&url=https%3a%2f%2fnews.qq.com%2frain%2fa%2f20220115A07F7O00&c=12097562555274082455&mkt=en-us) | Sat, 15 Jan 2022 |
+| 🔴 D | [班主任要做学生健康成长引路人](https://baijiahao.baidu.com/s?id=1797700898019976141&wfr=spider&for=pc) | 2024年4月30日 |
+| 🔴 D | [“十佳”揭晓!点赞华师班主任!](http://baijiahao.baidu.com/s?id=1797060696437375881&wfr=spider&for=pc) | 2024年4月22日 |
+| 🔴 D | [优秀的班主任,能拨动心弦、温暖心灵](https://www.thepaper.cn/newsDetail_forward_25631618) | 2023年12月12日 |
+| 🔴 D | [当好中小学班主任要做到“六要”](https://paper.people.com.cn/zgcsb/pc/content/202412/30/content_30049027.html) | 2024年12月30日 |
+
+## 📌 Gemini
+
+| 来源 | 标题 | 时间 |
+|---|---|---|
+| 🔵 G | [面对Gemini冲击，OpenAI持续“失血”？ - 华尔街见闻](https://news.google.com/rss/articles/CBMiUkFVX3lxTE9RSU5sekVsRWVicmJEVDI2cWRKXzFLbUl6NHdmd2NOSGU4RUNjczZFRDhUS0dyajY5SWlFdWs5LUtKcFhlVlZLM1ZoMHpUNDRHTnc?oc=5) | Wed, 07 Jan 2026 |
+| 🔵 G | [奥比中光发布Gemini 305，为机械臂腕部打造"指尖级"3D视觉 - 热点科技](https://news.google.com/rss/articles/CBMiT0FVX3lxTE01T21pSWVqbUlPd1RySFFmNGwwQTQ0VEhPa053NGFFNzBKeTJyUmY0UmVsc0lja05wWEF5c3VrUG5BcnMySzIxTDlIMUwwTWc?oc=5) | Wed, 07 Jan 2026 |
+| 🔵 G | [谷歌 Gemini API 负责人自曝：用竞品Claude Code 1小时复现自己团队一年成果，工程师圈炸了！ - InfoQ 官网](https://news.google.com/rss/articles/CBMiXkFVX3lxTE5BMWtrbXdnRXdfeDY3OVlqYy1hOE5JeThZOGs0NGpDOXlzUC1oVzF2blNZNTBxYWdYcVhJc1VxVGZlQi1JaURUTFBIWm1GdEhtN1lUbTQ0d3g2YlM4VGc?oc=5) | Tue, 06 Jan 2026 |
+| 🔵 G | [波士顿动力×谷歌DeepMind强强联手！Gemini Robotics大模型将驱动新一代Atlas人形机器人 - 电子工程专辑](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBkVnJFTUpzVU9PNURMQUNHTVc1OWVrTzh1MFU3anlCTHE4em1GQW5JcUxvdE1uYnBGQzlPTFNoVkxaVEZFNFV5aGRiZTVYMmZqYlB3?oc=5) | Wed, 07 Jan 2026 |
+| 🔵 G | [三星的目标是到 2026 年将 Gemini 扩展到 8 亿台设备 - VOI.id](https://news.google.com/rss/articles/CBMiT0FVX3lxTE1MQzA1NzFXbmVvZDl0U2hXSVVkSlE1aDVEYWhQak5FM0c2b3l2UGloaUZWS3ZQSXpCQmQzYzcwNEZId1gwX3FlTFoxNlVTREHSAUJBVV95cUxPdFk5RUlaVWFFS0xXYzROSEY2Z1lLVXRyc2t0X2FCOUcwX3ZIeWlKVHUwN0t1cHQyb2s4VTJRd29TWXc?oc=5) | Wed, 07 Jan 2026 |
+| 🟢 B | [重磅！Google AI Studio即将迎来颠覆性更新：工具集成大升级，Gemini 3 Pro ...](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e2619cddc4956a0eda35860fafd20&url=https%3a%2f%2fwww.sohu.com%2fa%2f973523678_211762&c=890403664006009977&mkt=en-us) | Wed, 07 Jan 2026 |
+| 🟢 B | [绝对炸裂 - 谷歌 Gemini 3.0 Pro 助力解开《纽伦堡编年史》中长期存在的 ...](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e2619cddc4956a0eda35860fafd20&url=https%3a%2f%2fwww.sohu.com%2fa%2f973234350_619610&c=16641340300523701884&mkt=en-us) | Tue, 06 Jan 2026 |
+| 🟢 B | [连月挑战OpenAI！谷歌发布更高效Gemini 3 Flash，App默认模型，上线即加 ...](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e2619cddc4956a0eda35860fafd20&url=https%3a%2f%2fnews.qq.com%2frain%2fa%2f20251218A00U5S00&c=16803350873301100751&mkt=en-us) | Wed, 17 Dec 2025 |
+| 🟢 B | [奥运史上AI首秀，谷歌Gemini将亮相巴黎，打造AI观赛新体验](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=695e2619cddc4956a0eda35860fafd20&url=https%3a%2f%2fwww.36kr.com%2fp%2f2873389477892482&c=1952370190130151105&mkt=en-us) | Sat, 03 Jan 2026 |
+| 🔴 D | [谷歌Gemini免费开放了!长音频理解功能独一份,100万上下文敞开用](https://baijiahao.baidu.com/s?id=1795921324816031782&wfr=spider&for=pc) | 2024年4月10日 |
+| 🔴 D | [摸底谷歌Gemini:CMU全面测评,GeminiPro不敌GPT3.5Turbo](https://baijiahao.baidu.com/s?id=1785861291940952838&wfr=spider&for=pc) | 2023年12月21日 |
+| 🔴 D | [Gemini上线首日:用户褒贬不一,演示被质疑「造假」,谷歌承认了](https://baijiahao.baidu.com/s?id=1784694921565717145&wfr=spider&for=pc) | 2023年12月8日 |
+| 🔴 D | [谷歌称Gemini开创“原生多模态”时代,但演示视频被指夸大性能](https://baijiahao.baidu.com/s?id=1784682680795397174&wfr=spider&for=pc) | 2023年12月8日 |
 
