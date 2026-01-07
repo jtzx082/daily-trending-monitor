@@ -1,59 +1,178 @@
-name: Open Source Monitor
+import requests
+import time
+from typing import List, Set
+import json
 
-# 触发条件
-on:
-  push:
-    branches: [ main ]      # 推送代码到 main 分支时触发
-  schedule:
-    - cron: '0 0 * * *'     # 定时任务：每天 UTC 0点 (北京时间早上8点)
-  workflow_dispatch:        # 允许在 Actions 页面手动点击按钮触发
-
-# 赋予写权限，以便将生成的 README 推送回仓库
-permissions:
-  contents: write
-
-jobs:
-  scrape-and-report:
-    runs-on: ubuntu-latest
-    
-    steps:
-    # 1. 拉取代码
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    # 2. 设置 Python 环境
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-
-    # 3. 安装依赖
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        # 如果你上传了 requirements.txt 则使用它，否则直接安装常用库防止报错
-        if [ -f requirements.txt ]; then
-          pip install -r requirements.txt
-        else
-          pip install requests beautifulsoup4
-        fi
-
-    # 4. 运行爬虫脚本
-    - name: Run Scraper
-      run: python main.py
-
-    # 5. 提交并推送更改 (已修复 print -> echo 错误)
-    - name: Commit and Push changes
-      run: |
-        git config --global user.name "GitHub Action Bot"
-        git config --global user.email "action@github.com"
+class SearchEngineCrawler:
+    def __init__(self):
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
         
-        # 检查是否有文件变动 (git status -s 会输出变动的文件列表，如果不为空则说明有变动)
-        if [[ -n $(git status -s) ]]; then
-          git add README.md
-          git commit -m "Update Daily Trending: $(date +'%Y-%m-%d')"
-          git push
-          echo "Changes pushed successfully."
-        else
-          echo "No changes to commit. Skipping push."
-        fi
+    def search_google(self, query: str, num_results: int = 10) -> List[str]:
+        """
+        通过Google搜索获取结果
+        注意：实际使用时需要Google Custom Search API
+        """
+        # 这里使用Google Custom Search API
+        # 你需要先申请API Key和Search Engine ID
+        api_key = "YOUR_GOOGLE_API_KEY"
+        cx = "YOUR_SEARCH_ENGINE_ID"
+        
+        url = "https://www.googleapis.com/customsearch/v1"
+        params = {
+            'key': api_key,
+            'cx': cx,
+            'q': query,
+            'num': min(num_results, 10)  # Google API最多10个结果
+        }
+        
+        try:
+            response = requests.get(url, params=params, headers=self.headers)
+            response.raise_for_status()
+            results = response.json()
+            
+            urls = []
+            if 'items' in results:
+                for item in results['items']:
+                    urls.append(item['link'])
+            return urls
+        except Exception as e:
+            print(f"Google搜索错误: {e}")
+            return []
+    
+    def search_bing(self, query: str, num_results: int = 10) -> List[str]:
+        """
+        通过Bing搜索获取结果
+        注意：需要Bing Search API Key
+        """
+        # Bing Search API v7
+        subscription_key = "YOUR_BING_API_KEY"
+        endpoint = "https://api.bing.microsoft.com/v7.0/search"
+        
+        headers = {
+            'Ocp-Apim-Subscription-Key': subscription_key
+        }
+        params = {
+            'q': query,
+            'count': num_results,
+            'textDecorations': True,
+            'textFormat': 'HTML'
+        }
+        
+        try:
+            response = requests.get(endpoint, headers=headers, params=params)
+            response.raise_for_status()
+            results = response.json()
+            
+            urls = []
+            if 'webPages' in results and 'value' in results['webPages']:
+                for page in results['webPages']['value']:
+                    urls.append(page['url'])
+            return urls
+        except Exception as e:
+            print(f"Bing搜索错误: {e}")
+            return []
+    
+    def extract_keys_from_url(self, url: str) -> Set[str]:
+        """
+        从网页中提取包含Q7DTD的密钥
+        """
+        keys = set()
+        try:
+            response = requests.get(url, headers=self.headers, timeout=10)
+            response.raise_for_status()
+            
+            # 使用正则表达式查找可能包含Q7DTD的密钥
+            import re
+            
+            # 匹配包含Q7DTD的字符串
+            patterns = [
+                r'[A-Z0-9]{10,}',  # 大写字母和数字的组合
+                r'[a-fA-F0-9]{32}',  # MD5哈希
+                r'[a-fA-F0-9]{40}',  # SHA-1
+                r'[a-fA-F0-9]{64}',  # SHA-256
+            ]
+            
+            content = response.text
+            # 首先找到包含Q7DTD的行
+            for line in content.split('\n'):
+                if 'Q7DTD' in line.upper():
+                    # 然后在行中查找可能的密钥模式
+                    for pattern in patterns:
+                        matches = re.findall(pattern, line)
+                        for match in matches:
+                            if 'Q7DTD' in match.upper():
+                                keys.add(match)
+            
+            return keys
+            
+        except Exception as e:
+            print(f"提取URL {url} 错误: {e}")
+            return set()
+    
+    def crawl(self, search_queries: List[str], max_results_per_query: int = 20):
+        """
+        主爬虫函数
+        """
+        all_keys = set()
+        
+        for query in search_queries:
+            print(f"搜索查询: {query}")
+            
+            # 搜索Google
+            print("正在搜索Google...")
+            google_urls = self.search_google(query, max_results_per_query)
+            print(f"从Google找到 {len(google_urls)} 个结果")
+            
+            # 搜索Bing
+            print("正在搜索Bing...")
+            bing_urls = self.search_bing(query, max_results_per_query)
+            print(f"从Bing找到 {len(bing_urls)} 个结果")
+            
+            # 合并URL并去重
+            all_urls = list(set(google_urls + bing_urls))
+            
+            # 从每个URL提取密钥
+            for i, url in enumerate(all_urls):
+                print(f"处理URL {i+1}/{len(all_urls)}: {url[:80]}...")
+                keys = self.extract_keys_from_url(url)
+                if keys:
+                    print(f"  找到密钥: {keys}")
+                    all_keys.update(keys)
+                
+                # 延迟以避免被封
+                time.sleep(1)
+        
+        return all_keys
+
+def main():
+    # 定义搜索查询
+    search_queries = [
+        '"Q7DTD" key',
+        'Q7DTD API',
+        'Q7DTD activation',
+        'Q7DTD license',
+        'Q7DTD code',
+        'Q7DTD serial',
+        '"contains Q7DTD"',
+        'Q7DTD password',
+        'Q7DTD token'
+    ]
+    
+    crawler = SearchEngineCrawler()
+    found_keys = crawler.crawl(search_queries, max_results_per_query=10)
+    
+    # 保存结果
+    print(f"\n找到 {len(found_keys)} 个包含Q7DTD的密钥:")
+    for key in found_keys:
+        print(f"  {key}")
+    
+    # 保存到文件
+    with open('q7dtd_keys.json', 'w') as f:
+        json.dump(list(found_keys), f, indent=2)
+    
+    print("\n结果已保存到 q7dtd_keys.json")
+
+if __name__ == "__main__":
+    main()
