@@ -1,62 +1,91 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime
-import os
+import urllib.parse
 
-def scrape_github_trending():
-    url = "https://github.com/trending"
+# 定义您想要关注的关键词（可以在这里随意增减）
+KEYWORDS = [
+    "高中化学教学",
+    "高中班主任工作",
+    "人工智能 AI 技术"
+]
+
+def fetch_bing_news_rss(keyword):
+    # 将关键词转换为 URL 编码 (例如: 高中 -> %E9%AB%98%E4%B8%AD)
+    encoded_keyword = urllib.parse.quote(keyword)
+    # Bing News RSS 接口
+    url = f"https://www.bing.com/news/search?q={encoded_keyword}&format=rss"
+    
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0'
     }
 
     try:
-        response = requests.get(url, headers=headers, timeout=15)
+        response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
         
-        soup = BeautifulSoup(response.text, 'html.parser')
-        repo_list = soup.select('article.Box-row') # 获取所有项目卡片
+        # 使用 xml 解析器
+        soup = BeautifulSoup(response.content, 'xml')
+        items = soup.find_all('item')
         
-        markdown_content = f"# 📈 GitHub 开源项目日报\n\n"
-        markdown_content += f"**更新时间**: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (UTC)\n\n"
-        markdown_content += "| 项目名称 | 简介 | Stars |\n"
-        markdown_content += "|---|---|---|\n"
-
-        for repo in repo_list[:15]: # 只取前15个
-            # 1. 提取项目名称和链接
-            h1 = repo.select_one('h1')
-            link = h1.select_one('a')
-            name = link.text.strip().replace('\n', '').replace(' ', '')
-            href = f"https://github.com{link['href']}"
+        news_list = []
+        for item in items[:10]: # 每个话题只取前10条
+            title = item.title.text
+            link = item.link.text
+            pub_date = item.pubDate.text if item.pubDate else ""
             
-            # 2. 提取描述 (有些项目没有描述，需要容错)
-            desc_tag = repo.select_one('p.col-9')
-            desc = desc_tag.text.strip() if desc_tag else "暂无描述"
+            # 简单的日期格式化，去掉多余的时区信息
+            if len(pub_date) > 16:
+                pub_date = pub_date[:16]
+                
+            news_list.append({
+                "title": title,
+                "link": link,
+                "date": pub_date
+            })
             
-            # 3. 提取今日 Star 数 (通常在最后一个 svg 后面)
-            # 这里简化处理，直接找包含 'stars today' 的文本
-            stars_today = "N/A"
-            span_tags = repo.select('span.d-inline-block.float-sm-right')
-            if span_tags:
-                stars_today = span_tags[0].text.strip()
-            
-            # 为了防止 Markdown 表格错乱，替换掉描述里的竖线
-            desc = desc.replace('|', '/')
-            
-            markdown_content += f"| [{name}]({href}) | {desc} | {stars_today} |\n"
-
-        return markdown_content
+        return news_list
 
     except Exception as e:
-        print(f"爬取失败: {e}")
-        return None
+        print(f"获取 [{keyword}] 失败: {e}")
+        return []
 
-def save_to_file(content):
-    # 将结果保存为 README.md，这样直接在仓库首页就能看到
+def generate_markdown(data_dict):
+    md = f"# 🏫 教育与科技日报\n\n"
+    md += f"**更新时间**: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')} (UTC)\n\n"
+    md += "> 本日报由 GitHub Actions 自动生成，数据来源 Bing News。\n\n"
+
+    for keyword, news_items in data_dict.items():
+        md += f"## 📌 {keyword}\n\n"
+        if not news_items:
+            md += "今日暂无相关新闻。\n\n"
+            continue
+            
+        md += "| 新闻标题 | 发布时间 |\n"
+        md += "|---|---|\n"
+        for news in news_items:
+            # 清理标题中的 Bing 高亮标签
+            clean_title = news['title'].replace(f"{keyword}", f"**{keyword}**")
+            md += f"| [{clean_title}]({news['link']}) | {news['date']} |\n"
+        md += "\n"
+        
+    return md
+
+def main():
+    all_news = {}
+    
+    for keyword in KEYWORDS:
+        print(f"正在抓取: {keyword} ...")
+        news = fetch_bing_news_rss(keyword)
+        all_news[keyword] = news
+    
+    # 生成 Markdown 内容
+    content = generate_markdown(all_news)
+    
+    # 保存文件
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(content)
-    print("文件已更新: README.md")
+    print("README.md 更新成功！")
 
 if __name__ == "__main__":
-    content = scrape_github_trending()
-    if content:
-        save_to_file(content)
+    main()
