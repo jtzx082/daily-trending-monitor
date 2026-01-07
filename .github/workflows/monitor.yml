@@ -1,0 +1,44 @@
+name: Open Source Monitor
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *' # 每天 UTC 0点 (北京时间早8点) 运行
+  workflow_dispatch: # 允许手动点击按钮运行
+
+permissions:
+  contents: write # 赋予写权限，以便将结果推送到仓库
+
+jobs:
+  scrape-and-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run Scraper
+      run: python main.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "action@github.com"
+        # 检查是否有文件变动
+        if [[ -n $(git status -s) ]]; then
+          git add README.md
+          git commit -m "Update Daily Trending: $(date +'%Y-%m-%d')"
+          git push
+        else
+          print("No changes to commit")
+        fi
